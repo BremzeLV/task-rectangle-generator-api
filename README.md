@@ -1,10 +1,32 @@
 
 <h1>
-    Live ip: http://18.184.62.150></a>    
+    Live ip: http://18.184.62.150    
 </h1>
 <h3>Routes</h3>
 <a href="http://18.184.62.150/generation-status?id={id}">GET http://18.184.62.150/generation-status?id={id}</a><br />
 <a href="http://18.184.62.150/generate-rectangles">POST http://18.184.62.150/generate-rectangles</a><br />
+<code>
+{
+"width": 1024,
+"height": 1024,
+"color": "#fff",
+"rectangles": [{
+"id": "my-id3",
+"x": 10,
+"y": 10,
+"height": 100,
+"width": 200,
+"color": "#000"
+},
+{
+"id": "my-id4",
+"x": 100,
+"y": 100,
+"height": 100,
+"width": 200,
+"color": "#000"
+}]}
+</code>
 <a href="http://18.184.62.150/generate-rectangles">GET http://18.184.62.150/generate-rectangles</a>
 
 
