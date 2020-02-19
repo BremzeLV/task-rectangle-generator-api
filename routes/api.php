@@ -19,6 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('generation-status', 'ImageGeneratorController@status');
-Route::get('generated-image-location', 'ImageGeneratorController@show');
 Route::post('generate-rectangles', 'ImageGeneratorController@store');
 Route::get('generate-rectangles', 'ImageGeneratorController@generate');
