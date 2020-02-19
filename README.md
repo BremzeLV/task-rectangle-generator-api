@@ -1,3 +1,13 @@
+
+<h1>
+    Live ip: <a href="http://18.184.62.150/"></a>    
+</h1>
+<h3>Routes</h3>
+<a href="http://18.184.62.150/generation-status?id={id}">GET http://18.184.62.150/generation-status?id={id}</a>
+<a href="http://18.184.62.150/generate-rectangles">POST http://18.184.62.150/generate-rectangles</a>
+<a href="http://18.184.62.150/generate-rectangles">GET http://18.184.62.150/generate-rectangles</a>
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
