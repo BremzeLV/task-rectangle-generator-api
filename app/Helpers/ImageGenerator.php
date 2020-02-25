@@ -46,6 +46,7 @@ class ImageGenerator
         $this->height = $height;
 
         $color = imagecolorallocate($this->canvas, $this->color['r'], $this->color['g'], $this->color['b']);
+
         imagefill($this->canvas, 0, 0, $color);
     }
 
