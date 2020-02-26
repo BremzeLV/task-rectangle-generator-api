@@ -35,8 +35,8 @@
 <h2>
  Task description:
 </h2>
-<code>
-    Izveidot php API, kas spēj ģenerēt PNG bildes ar aizpildītiem taisnstūriem
+
+Izveidot php API, kas spēj ģenerēt PNG bildes ar aizpildītiem taisnstūriem
 Detalizēta specifikācija
 
 1) API Atbild uz HTTP pieprasījumu, reģistrē PNG bildes ģenerēšanas pieteikumu un atgriež tā unikālo identifikātoru.
@@ -99,7 +99,6 @@ Piemērs done:
     status: 'done'
     url: 'http://your-server/generated-image-location //bildes url, kurā to var saņemt kā (Content-Type: image/png)
 }
-    </code>
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
