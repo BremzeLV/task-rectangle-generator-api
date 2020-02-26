@@ -41,7 +41,7 @@ Detalizēta specifikācija <br />
 
 1) API Atbild uz HTTP pieprasījumu, reģistrē PNG bildes ģenerēšanas pieteikumu un atgriež tā unikālo identifikātoru.
 Ja pieprasījuma kvadrāti pārklājas, robežojas ar citiem kvadrātiem vai bildes malām, kā arī, ja pieprasījumā tiek nosūtīti dati, kas kaut kādā veidā nav izpildāmi (negatīvas, nepareizas vērtības, nekorekta json struktūra utml.), tad jāatgriež kļūdu paziņojumi ar informāciju par datu nesakritību.
-Pieprasījuma piemērs <br />
+Pieprasījuma piemērs <br /><br />
 
 curl -X POST http://your-server/generate-rectangles -d '
 {
@@ -60,13 +60,13 @@ curl -X POST http://your-server/generate-rectangles -d '
         ...
     ]
 }'
-<br />
+<br /><br />
 Veiksmīgas apstrādes atbildes piemērs:
 {
     success: true,
     id: auto-generated-identifier
 }
-<br />
+<br /><br />
 Neveiksmīgas atbildes piemērs (kļūdu paziņojumu struktūra ir atvērta interpretācijai):
 {
     success: false,
@@ -77,7 +77,7 @@ Neveiksmīgas atbildes piemērs (kļūdu paziņojumu struktūra ir atvērta inte
         'malformatted_json': []
     }
 }
-<br />
+<br /><br />
 2) Pēc manuāla faila izsaukuma (aka CRON) uzģenerē vecāko bildes ģenerēšanas pieteikumu<br />
 3) Pēc pieprasījuma curl -X GET http://your-server/generation-status?id=auto-generated-identifier
 atgriež šobrīdējo bildes ģenerēšanas stāvokli (pending, failed, in_progress, done)<br />
@@ -85,16 +85,16 @@ Piemērs pending:
 {
     status: 'pending'
     queue_length: 5 // bilžu skaits, kas ir priekšā
-}<br />
+}<br /><br />
 Piemērs failed:  
 {
     status: 'failed'
     reason: 'item_not_found' //notikusi kāda kļūme
-}<br />
+}<br /><br />
 Piemērs in_progress:  
 {
     status: 'in_progress'
-}<br />
+}<br /><br />
 Piemērs done:  
 {
     status: 'done'
