@@ -1,6 +1,6 @@
 
 <h1>
-    Live ip: http://18.184.62.150    
+    Live ip on AWS: http://18.184.62.150    
 </h1>
 <h3>Routes</h3>
 <a href="http://18.184.62.150/generation-status?id={id}">GET http://18.184.62.150/generation-status?id={id}</a><br />
